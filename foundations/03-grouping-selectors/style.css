@@ -4,6 +4,7 @@ font-family: Helvetica, "Times New Roman", serif;
 }
 
 .click-me {
+    color: white;
     background-color: rgb(36, 122, 83);
 }
 
