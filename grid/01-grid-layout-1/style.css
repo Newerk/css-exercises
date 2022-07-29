@@ -8,6 +8,11 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
 }
 
 .container div {
@@ -20,10 +25,13 @@ body, html {
 }
 
 .header {
-  background-color: #FFDE22;
+grid-column: span 2;
+background-color: #FFDE22;
 }
 
 .sidebar {
+  grid-row: 2 / 4;
+
   background-color: #FF7755;
 }
 
@@ -43,5 +51,7 @@ body, html {
 }
 
 .footer {
+  grid-column: span 2;
+
   background-color: #393f4d;
 }
